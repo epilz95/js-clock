@@ -3,32 +3,37 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>testProject</title>
+    <title>JS Clock</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 </head>
 <body>
 
 <div class="l-wrapper">
-    <header class="l-header">
-        <div class="svg-icon__arrow-left--lg--grey svg-icon__arrow-left--lg--grey-dims"></div>
-    </header>
-
-    <nav class="l-nav-main">
-
-    </nav>
-
-    <main role="main" class="l-content">
-        <div id="test" class="test">
-            Test text rot mit blauem hintergrund...
-            <p>additional text</p>
-            <img src="img/web.png" />
+    <div class="l-inner">
+        <div class="circle circle--hours">
+            <span class="text-time">11</span>
+            <div class="circle__slice">
+                <div class="circle__bar"></div>
+                <div class="circle__fill"></div>
+            </div>
         </div>
-    </main>
-
-    <footer class="l-footer">
-
-    </footer>
+        <div class="circle circle--mins">
+            <span class="text-time">30</span>
+            <div class="circle__slice circle__slice--morethanhalf">
+                <div class="circle__bar"></div>
+                <div class="circle__fill"></div>
+            </div>
+        </div>
+        <div class="circle circle--secs">
+            <span class="text-time">00</span>
+            <div class="circle__slice circle__slice--morethanhalf">
+                <div class="circle__bar"></div>
+                <div class="circle__fill"></div>
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>

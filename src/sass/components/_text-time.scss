@@ -1,0 +1,15 @@
+.text-time {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50px);
+
+    width: 100px;
+
+    color: $color-sidecar;
+    font-size: 70px;
+    line-height: 150px;
+    font-family: "Share Tech Mono", monospace;
+    text-align: center;
+}

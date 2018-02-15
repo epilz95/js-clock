@@ -1,0 +1,17 @@
+.l-wrapper {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: $color-shadow-green;
+    overflow: hidden;
+}
+
+.l-inner {
+    position: absolute;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 325px);
+
+    width: 650px;
+}
