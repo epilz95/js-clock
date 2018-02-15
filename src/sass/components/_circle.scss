@@ -32,6 +32,7 @@
     &__bar {
         border: 15px solid #000;
         clip: rect(0, 75px, 150px, 0);
+        transition: transform 0.2s;
     }
 
     &__slice--morethanhalf {
@@ -49,10 +50,6 @@
         .circle__fill {
             border-color: $color-juniper;
         }
-
-        .circle__bar {
-            transform: rotate(90deg);
-        }
     }
 
     &--mins {
@@ -60,13 +57,12 @@
         .circle__fill {
             border-color: $color-muddy-waters;
         }
-
-        .circle__bar {
-            transform: rotate(270deg);
-        }
     }
 
     &--secs {
-        border-color: $color-kelp;
+        .circle__bar,
+        .circle__fill {
+            border-color: $color-kelp;
+        }
     }
 }
